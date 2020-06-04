@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-12 col-md-8">
+        <h1 style="font-family:Maiandra GD;">Your Amazing Post:</h1>
+        <div class="post-inner">
+          <div class="form-row">
+            <div class="col-8 mr-sm-2">
+              <input type="text" class="form-control" placeholder="Please Enter your beautiful post!" id="addtaskinput" (input)="disableButton" [(ngModel)]="postTitle" />
+              <input type="hidden" id="saveindex">
+            </div>
+                 <button type="button" class="btn btn-success mr-sm-2" id="addtaskbtn" (click)="clearTitle()" [disabled]="isDisplay" value="clear">
+                    Clear
+            </button>
+          </div>
+          <div>
+              <br>
+              <h2 style="color:rgb(102, 0, 51);font-family:Kunstler Script; "><u><b>Your post goes here:</b></u></h2>
+            <p style="text-align:left;"><b style="font-family:Californian FB ;">{{postTitle}}</b></p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
